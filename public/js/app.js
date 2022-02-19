@@ -14,7 +14,6 @@ form_ran.addEventListener('submit', (e) =>{
    e.preventDefault();
     console.log('testing')
     const serach_user=search.value;
-
     message_1.textContent='Loading'
     message_2.textContent='';
     message_3.textContent='';
