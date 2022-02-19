@@ -7,6 +7,7 @@ const data = require('./utils/fake_data.js')
 console.log(__dirname)
 console.log(__filename)
 
+const port= process.env.PORT || 3000;
 //console.log(data.userdata())
 
 // Setting up the config path for Express
@@ -89,7 +90,7 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000,()=>{
-    console.log('Sever is UP on port 3000')
+app.listen(port,()=>{
+    console.log('Sever is UP on port '+ port)
 })
 

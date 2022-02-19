@@ -19,7 +19,7 @@ form_ran.addEventListener('submit', (e) =>{
     message_3.textContent='';
     message_4.textContent='';
 
-    fetch('http://localhost:3000/weather?search='+serach_user).then((response) =>{
+    fetch('/weather?search='+serach_user).then((response) =>{
     response.json().then((data) =>{
         console.log(data)
 
